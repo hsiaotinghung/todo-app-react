@@ -1,0 +1,15 @@
+.doneButton {
+  border: 3px darkseagreen solid;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  background-color: white;
+  margin-right: 1rem;
+}
+.doneButton.complete {
+  background-color: rgb(209, 227, 209);
+}
+.doneButton:hover {
+  background-color: darkseagreen;
+}

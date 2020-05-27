@@ -1,0 +1,38 @@
+.addNewTodoForm {
+  width: 85%;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addNewTodoLabel {
+  display: none;
+}
+.addNewTodoInput {
+  border: none;
+  border-bottom: 1px gray solid;
+  width: 70%;
+  line-height: 1.5rem;
+}
+.addNewTodo {
+  border: 3px goldenrod solid;
+}
+
+.addIcon {
+  border: 3px goldenrod solid;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  background-color: wheat;
+  margin-right: 1rem;
+}
+
+.addButton {
+  margin-left: auto;
+  border-color: goldenrod;
+}
+.addButton:hover {
+  background-color: wheat;
+  color: rgb(104, 79, 25);
+}

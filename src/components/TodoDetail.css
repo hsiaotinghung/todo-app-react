@@ -1,0 +1,44 @@
+.todoDetailContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.todoDetailContainer label {
+  display: inline-block;
+  width: 15%;
+  text-align: start;
+}
+
+.todoDetailName {
+  width: 100%;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.todoDescription {
+  width: 100%;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.todoDetailNameInput,
+.todoDescriptionTextarea {
+  resize: none;
+  width: 70%;
+  margin: auto;
+  border: 1px grey solid;
+  border-radius: 2px;
+  margin-right: 1rem;
+  line-height: 1.5rem;
+}
+
+.todoDetailUpdate {
+  width: 150px;
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+.todoDetailUpdate:hover {
+  background: green;
+  color: white;
+}

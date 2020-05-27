@@ -1,0 +1,13 @@
+.tabControlContainer .tab {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 10px;
+  border: 1px green solid;
+  border-radius: 2px;
+  line-height: 2rem;
+}
+.tabControlContainer .active,
+.tabControlContainer .tab:hover {
+  background-color: green;
+  color: white;
+}

@@ -1,0 +1,10 @@
+.todoItem {
+  border: 3px darkseagreen solid;
+}
+.todoName {
+  align-self: center;
+  height: 1rem;
+  min-width: 50%;
+  text-align: start;
+  overflow: hidden;
+}
