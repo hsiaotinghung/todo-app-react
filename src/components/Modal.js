@@ -18,7 +18,7 @@ export default function Modal(props) {
       <section className="modal-main" ref={modalContentNode}>
         <h2>{props.title || ''}</h2>
         <button className="closeButton" onClick={props.handleClose}>
-          close
+          Close
         </button>
         {props.children}
       </section>

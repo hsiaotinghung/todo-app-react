@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-  baseURL: `http://localhost:4000`,
+  baseURL: `https://todo-json-server-123.herokuapp.com/`,
   withCredentials: false, // This is the default
   headers: {
     Accept: 'application/json',
@@ -22,5 +22,8 @@ export default {
   },
   putTodo(id, todo) {
     return apiClient.put('/todos/' + id, todo)
+  },
+  deleteTodo(id) {
+    return apiClient.delete('/todos/' + id)
   }
 }

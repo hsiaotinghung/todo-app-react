@@ -4,31 +4,40 @@
   flex-direction: column;
   width: 90%;
 }
-.todoDetailContainer label {
+.todoDetailLabel {
   display: inline-block;
   width: 15%;
   text-align: start;
+  font-weight: 500;
 }
 
-.todoDetailName {
+.todoDetailName,
+.todoDescription,
+.todoStatus {
   width: 100%;
   display: flex;
   padding-bottom: 15px;
 }
-
-.todoDescription {
-  width: 100%;
-  display: flex;
-  padding-bottom: 15px;
+.deleteTodo {
+  align-self: flex-start;
+  text-decoration: underline;
+  color: crimson;
 }
-
 .todoDetailNameInput,
 .todoDescriptionTextarea {
+  color: darkslategray;
   resize: none;
   width: 70%;
   margin: auto;
   border: 1px grey solid;
   border-radius: 2px;
+  margin-right: 1rem;
+  line-height: 1.5rem;
+}
+.todoStatusDisplay {
+  width: 70%;
+  margin: auto;
+  text-align: left;
   margin-right: 1rem;
   line-height: 1.5rem;
 }

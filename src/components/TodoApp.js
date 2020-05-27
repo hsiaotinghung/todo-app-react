@@ -16,6 +16,10 @@ function reducer(todos, action) {
       return todos.map((todo, index) => {
         return todo.id === action.payload.id ? action.payload : todo
       })
+    case 'delete':
+      return todos.filter(todo => {
+        return todo.id !== action.payload
+      })
     default:
       throw new Error()
   }
@@ -57,7 +61,10 @@ export default function TodoApp() {
     const result = await TodoService.putTodo(todoToUpdate.id, todoToUpdate)
     dispatch({ type: 'update', payload: result.data })
   }
-
+  const deleteTodo = async todoToDelete => {
+    const result = await TodoService.deleteTodo(todoToDelete.id)
+    dispatch({ type: 'delete', payload: todoToDelete.id })
+  }
   const switchTabView = newView => {
     setView(newView)
   }
@@ -88,6 +95,7 @@ export default function TodoApp() {
           todo={selectedTodo}
           setActiveTodo={setActiveTodo}
           updateTodo={updateTodo}
+          deleteTodo={deleteTodo}
         />
       </Modal>
     </div>
